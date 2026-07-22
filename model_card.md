@@ -2,16 +2,21 @@
 
 ## 1. Model Name  
 
-**VibeFinder 1.0**
+**MyMusicVibes**
 
 ---
 
 ## 2. Intended Use  
 
-VibeFinder recommends songs from a small catalog based on a user's taste profile.
-It assumes the user has one favorite genre, one favorite mood, a target energy
-level, and a yes/no acoustic preference. It is built for classroom exploration,
-not real users.
+MyMusicVibes recommends songs from a small catalog based on a user's taste
+profile. It assumes the user has one favorite genre, one favorite mood, a target
+energy level, and a yes/no acoustic preference.
+
+**Intended use:** classroom exploration and learning how scoring and ranking work.
+
+**Not intended use:** real music apps or real users. It should not be used to make
+decisions about people, and it should not be treated as fair or complete, because
+the catalog is tiny and the scoring is very simple.
 
 ---
 
@@ -188,8 +193,18 @@ genres have a real chance to appear.
 
 ## 9. Personal Reflection  
 
-I learned that a recommender is really just a scoring rule plus a ranking rule,
-and that the weights you choose quietly decide what users see. The surprising part
-was watching a single genre label outweigh the actual energy of a song, which
-showed me how easily bias sneaks in. Now I think of apps like Spotify as a set of
-tunable choices rather than magic, and I understand why those choices matter.
+**Biggest learning moment:** I realized a recommender is really just a scoring
+rule plus a ranking rule. The weights I picked quietly decided what songs users
+saw, which made me see that these systems are choices, not magic.
+
+**How AI tools helped:** the AI assistant guided me step by step, helped me
+troubleshoot my code, and fixed my syntax. I still had to double-check its work,
+especially the scoring math and whether the recommendations actually made sense
+for each profile.
+
+**What surprised me:** a few simple math rules can still "feel" like real
+recommendations. Adding up points for genre, mood, and energy was enough to make
+the results look thoughtful, even though the logic is basic.
+
+**What I would try next:** let users pick more than one favorite genre, add credit
+for similar genres, and grow the catalog so rarer styles get a fair chance.
